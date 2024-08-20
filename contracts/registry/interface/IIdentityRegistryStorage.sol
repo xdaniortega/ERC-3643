@@ -65,7 +65,6 @@ pragma solidity ^0.8.17;
 import "onchain-id/solidity/contracts/interface/IIdentity.sol";
 
 interface IIdentityRegistryStorage {
-
     /// events
 
     /**
@@ -125,11 +124,7 @@ interface IIdentityRegistryStorage {
      *  @param _country The country of the investor
      *  emits `IdentityStored` event
      */
-    function addIdentityToStorage(
-        address _userAddress,
-        IIdentity _identity,
-        uint16 _country
-    ) external;
+    function addIdentityToStorage(address _userAddress, IIdentity _identity, uint16 _country) external;
 
     /**
      *  @dev Removes an user from the storage.

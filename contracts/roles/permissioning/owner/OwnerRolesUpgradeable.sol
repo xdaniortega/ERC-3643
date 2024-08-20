@@ -67,9 +67,7 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 
 import "../../Roles.sol";
 
-contract OwnerRolesUpgradeable is OwnableUpgradeable
-
- {
+contract OwnerRolesUpgradeable is OwnableUpgradeable {
     using Roles for Roles.Role;
 
     /// variables

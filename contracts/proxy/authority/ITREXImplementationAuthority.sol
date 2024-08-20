@@ -63,7 +63,6 @@
 pragma solidity ^0.8.17;
 
 interface ITREXImplementationAuthority {
-
     /// types
 
     struct TREXContracts {

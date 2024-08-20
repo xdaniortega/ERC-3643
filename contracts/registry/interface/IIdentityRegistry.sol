@@ -132,11 +132,7 @@ interface IIdentityRegistry {
      *  @param _country The country of the investor
      *  emits `IdentityRegistered` event
      */
-    function registerIdentity(
-        address _userAddress,
-        IIdentity _identity,
-        uint16 _country
-    ) external;
+    function registerIdentity(address _userAddress, IIdentity _identity, uint16 _country) external;
 
     /**
      *  @dev Removes an user from the identity registry.
@@ -203,11 +199,7 @@ interface IIdentityRegistry {
      *  @param _countries The countries of the corresponding investors
      *  emits _userAddresses.length `IdentityRegistered` events
      */
-    function batchRegisterIdentity(
-        address[] calldata _userAddresses,
-        IIdentity[] calldata _identities,
-        uint16[] calldata _countries
-    ) external;
+    function batchRegisterIdentity(address[] calldata _userAddresses, IIdentity[] calldata _identities, uint16[] calldata _countries) external;
 
     /**
      *  @dev This functions checks whether a wallet has its Identity registered or not

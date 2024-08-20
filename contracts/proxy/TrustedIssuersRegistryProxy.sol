@@ -66,7 +66,6 @@ pragma solidity ^0.8.17;
 import "./AbstractProxy.sol";
 
 contract TrustedIssuersRegistryProxy is AbstractProxy {
-
     constructor(address implementationAuthority) {
         require(implementationAuthority != address(0), "invalid argument - zero address");
         _storeImplementationAuthority(implementationAuthority);

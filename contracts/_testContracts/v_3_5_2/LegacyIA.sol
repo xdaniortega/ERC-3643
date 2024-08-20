@@ -13,7 +13,6 @@ abstract contract ContextLegacy {
     }
 }
 
-
 abstract contract OwnableLegacy is ContextLegacy {
     address private _owner;
 
@@ -22,7 +21,7 @@ abstract contract OwnableLegacy is ContextLegacy {
     /**
      * @dev Initializes the contract setting the deployer as the initial owner.
      */
-    constructor () {
+    constructor() {
         address msgSender = _msgSender();
         _owner = msgSender;
         emit OwnershipTransferred(address(0), msgSender);
@@ -65,7 +64,6 @@ abstract contract OwnableLegacy is ContextLegacy {
         _owner = newOwner;
     }
 }
-
 
 contract LegacyIA is OwnableLegacy {
     event UpdatedImplementation(address newAddress);
